@@ -1,0 +1,77 @@
+/* Footer Styling */
+.footer {
+  background-color: #2d2d2d; /* Dark background for footer */
+  color: #fff; /* White text */
+  padding: 2rem 1.5rem;
+}
+
+.footer h3 {
+  font-size: 1.5rem; /* Slightly larger font size for headings */
+  font-weight: 700; /* Stronger font weight */
+  margin-bottom: 1.5rem;
+  text-transform: uppercase; /* Capitalized text for headings */
+  letter-spacing: 1px; /* Slight spacing between letters for clarity */
+}
+
+.footer ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.footer ul li {
+  margin-bottom: 0.75rem; /* Space between each list item */
+}
+
+.footer ul li a {
+  color: #b3b3b3; /* Light gray color for links */
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.footer ul li a:hover {
+  color: #fff; /* White color on hover for better contrast */
+  text-decoration: underline; /* Underline effect on hover */
+}
+
+/* Text Center Section */
+.footer .text-center {
+  font-size: 0.875rem; /* Slightly smaller text for copyright section */
+  border-top: 1px solid #4a4a4a; /* Border to separate sections */
+  padding-top: 1.5rem; /* More padding to give space */
+  text-align: center; /* Centered text */
+}
+
+/* Social Media Icons */
+.footer .social-media-icons {
+  display: flex;
+  justify-content: center; /* Center icons horizontally */
+  gap: 1.25rem; /* Spacing between icons */
+  margin-top: 1.5rem;
+}
+
+.footer .social-media-icons a {
+  color: #b3b3b3; /* Default color for social media icons */
+  font-size: 1.5rem; /* Larger icon size */
+  transition: color 0.3s ease, transform 0.3s ease; /* Smooth transition */
+}
+
+.footer .social-media-icons a:hover {
+  color: #fff; /* White color when hovered */
+  transform: scale(1.1); /* Slight scaling effect on hover for a cool effect */
+}
+
+/* Icon Specific Sizes */
+.footer .ri-facebook-fill,
+.footer .ri-twitter-fill,
+.footer .ri-instagram-fill,
+.footer .ri-linkedin-fill {
+  font-size: 2rem; /* Larger icons for a bolder look */
+}
+
+/* Add smooth background change on hover */
+.footer .social-media-icons a:hover {
+  background-color: rgba(255, 255, 255, 0.1); /* Subtle background on hover */
+  border-radius: 50%; /* Rounded effect for each icon */
+}

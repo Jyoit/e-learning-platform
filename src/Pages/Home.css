@@ -1,0 +1,328 @@
+/* Home.css */
+.home {
+  font-family: 'Roboto', sans-serif;
+}
+
+.hero-banner {
+  background: linear-gradient(to right, #007bff, #00c6ff);
+  color: white;
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.hero-banner .hero-text h1 {
+  font-size: 36px;
+}
+
+.hero-banner .cta-btn {
+  background-color: #ff9900;
+  padding: 10px 20px;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+
+
+/* Popular Courses Section */
+.popular-courses {
+  padding: 40px 20px;
+  background-color: #f4f4f4;
+  /* display: flex;
+  flex-direction: column;
+  align-items: center; 
+  justify-content: center;
+  text-align: center; */
+}
+
+.popular-courses h2 {
+  text-align: center;
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+/* Grid Layout for Course Cards */
+.course-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 50px;
+  /* justify-items: center; */
+  justify-content: center; 
+  justify-items: center;
+  
+}
+
+/* Course Card Styles */
+.course-card {
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 100%;
+  
+}
+
+.course-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Course Image */
+.course-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-bottom: 2px solid #f0f0f0;
+}
+
+/* Course Details */
+.course-info {
+  padding: 20px;
+}
+
+.course-info h3 {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.course-info p {
+  font-size: 16px;
+  color: #777;
+  margin-bottom: 15px;
+}
+
+/* Enroll Button */
+.enroll-btn {
+  background-color: #3498db;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.enroll-btn:hover {
+  background-color: #2980b9;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .popular-courses {
+    padding: 20px 10px;
+  }
+
+  .popular-courses h2 {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 480px) {
+  .popular-courses h2 {
+    font-size: 24px;
+  }
+}
+
+
+ 
+/* upcoming events */
+/*
+
+.upcoming-events {
+  margin-top: 40px;
+  padding: 0 20px;
+}
+
+
+.upcoming-events h2 {
+  text-align: center;
+}
+
+
+.event-grid {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+
+.event-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  width: 30%;
+  margin: 20px 0;
+  text-align: center;
+}
+
+
+.event-card img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+
+.event-card h3 {
+  font-size: 18px;
+}
+
+
+.register-btn {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  margin-top: 10px;
+} */
+
+
+/* Upcoming Events Section */
+.upcoming-events {
+  padding: 40px 20px;
+  background-color: #f4f4f4;
+}
+
+.upcoming-events h2 {
+  text-align: center;
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+/* Flexbox Layout for Event Cards */
+.event-grid {
+  display: flex;
+  justify-content: center; /* Aligns cards in the center horizontally */
+  gap: 20px; /* Adds padding between the cards */
+  flex-wrap: wrap; /* Ensures cards wrap to the next row on smaller screens */
+}
+
+/* Event Card Styles */
+.event-card {
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 580px; /* Fixed width for consistent layout */
+  padding: 30px 20px;
+  text-align: center;
+}
+
+.event-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Event Image */
+.event-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-bottom: 2px solid #f0f0f0;
+}
+
+/* Event Details */
+.event-info {
+  padding: 20px;
+}
+
+.event-info h3 {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.event-info p {
+  font-size: 16px;
+  color: #777;
+  margin-bottom: 15px;
+}
+
+/* Register Button */
+.register-btn {
+  background-color: #3498db;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.register-btn:hover {
+  background-color: #2980b9;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .upcoming-events {
+    padding: 20px 10px;
+  }
+
+  .upcoming-events h2 {
+    font-size: 28px;
+  }
+
+  .event-grid {
+    gap: 15px; /* Adjust gap for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .upcoming-events h2 {
+    font-size: 24px;
+  }
+
+  .event-grid {
+    flex-direction: column; /* Stacks the cards vertically on small screens */
+    align-items: center; /* Center-aligns the cards */
+  }
+}
+
+
+
+
+
+.faq {
+  margin-top: 40px;
+  padding: 0 20px;
+}
+
+.faq h2 {
+  text-align: center;
+}
+
+.faq-item {
+  margin-bottom: 20px;
+}
+
+.faq-item h4 {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.cta-final {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.cta-final .cta-btn {
+  background-color: #ff9900;
+  padding: 10px 20px;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+}
