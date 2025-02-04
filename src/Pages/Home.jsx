@@ -1,5 +1,5 @@
 
-import React,{useState} from 'react';
+// import React,{useState} from 'react';
 import { Link } from 'react-router-dom';
 import "./Home.css";
 import courses from './courseData';
@@ -56,7 +56,10 @@ export default function Home() {
               <div className="rating">{course.rating}</div>
               <div className="price">{course.price}</div>
               
-              <Link to={`/course/${course.id}`}>
+              <Link to={`/course/${course.id}`} onClick={(e) => {
+  e.preventDefault(); // Prevent the default link behavior
+  window.open(`/course/${course.id}`, '_blank'); // Open in a new tab/window
+}}>
                 <button className="enroll-btn">View Details</button>
                </Link>
             </div>

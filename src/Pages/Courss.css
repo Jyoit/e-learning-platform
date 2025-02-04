@@ -67,7 +67,7 @@
   }
   
   /* Enroll Button */
-  .enroll-button {
+  .enroll-btn {
     background-color: #3498db;
     color: white;
     padding: 12px 20px;
@@ -78,7 +78,7 @@
     transition: background-color 0.3s ease;
   }
   
-  .enroll-button:hover {
+  .enroll-btn:hover {
     background-color: #2980b9;
   }
   

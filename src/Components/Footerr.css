@@ -1,77 +1,93 @@
-/* Footer Styling */
-.footer {
-  background-color: #2d2d2d; /* Dark background for footer */
-  color: #fff; /* White text */
-  padding: 2rem 1.5rem;
+/* Define Color Variables */
+:root {
+  --primary-color: #3D52A0;   /* Dark Blue */
+  --secondary-color: #7091E6; /* Medium Blue */
+  --tertiary-color: #8697C4;  /* Light Blue */
+  --text-color: #ADBBDA;      /* Soft Gray-Blue */
+  --background-color: #EDE8F5; /* Very Light Purple */
 }
 
-.footer h3 {
-  font-size: 1.5rem; /* Slightly larger font size for headings */
-  font-weight: 700; /* Stronger font weight */
-  margin-bottom: 1.5rem;
-  text-transform: uppercase; /* Capitalized text for headings */
-  letter-spacing: 1px; /* Slight spacing between letters for clarity */
+/* Footer Container */
+.footer-container {
+  background-color: var(--primary-color);
+  color: var(--background-color);
+  padding: 20px 0;
+  text-align: center;
 }
 
-.footer ul {
-  list-style-type: none;
-  padding-left: 0;
-  margin: 0;
+/* Footer Content (Align in One Row) */
+.footer-content {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  padding: 20px;
 }
 
-.footer ul li {
-  margin-bottom: 0.75rem; /* Space between each list item */
+/* Individual Sections */
+.footer-section {
+  flex: 1;
+  min-width: 250px;
+  text-align: left;
+  padding: 10px;
 }
 
-.footer ul li a {
-  color: #b3b3b3; /* Light gray color for links */
+/* Footer Headings */
+.footer-heading {
+  font-size: 20px;
+  font-weight: bold;
+  color: var(--background-color);
+  margin-bottom: 10px;
+}
+
+/* Quick Links */
+.footer-links {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links li {
+  margin-bottom: 5px;
+}
+
+.footer-links a {
+  color: var(--text-color);
   text-decoration: none;
-  font-size: 1rem;
   transition: color 0.3s ease;
 }
 
-.footer ul li a:hover {
-  color: #fff; /* White color on hover for better contrast */
-  text-decoration: underline; /* Underline effect on hover */
+.footer-links a:hover {
+  color: var(--background-color);
 }
 
-/* Text Center Section */
-.footer .text-center {
-  font-size: 0.875rem; /* Slightly smaller text for copyright section */
-  border-top: 1px solid #4a4a4a; /* Border to separate sections */
-  padding-top: 1.5rem; /* More padding to give space */
-  text-align: center; /* Centered text */
+/* Contact Information */
+.footer-section p {
+  color: var(--text-color);
+  font-size: 16px;
+  margin: 5px 0;
 }
 
 /* Social Media Icons */
-.footer .social-media-icons {
+.social-icons {
   display: flex;
-  justify-content: center; /* Center icons horizontally */
-  gap: 1.25rem; /* Spacing between icons */
-  margin-top: 1.5rem;
+  gap: 15px;
 }
 
-.footer .social-media-icons a {
-  color: #b3b3b3; /* Default color for social media icons */
-  font-size: 1.5rem; /* Larger icon size */
-  transition: color 0.3s ease, transform 0.3s ease; /* Smooth transition */
+.social-icons a {
+  color: var(--text-color);
+  font-size: 20px;
+  transition: color 0.3s ease;
 }
 
-.footer .social-media-icons a:hover {
-  color: #fff; /* White color when hovered */
-  transform: scale(1.1); /* Slight scaling effect on hover for a cool effect */
+.social-icons a:hover {
+  color: var(--background-color);
 }
 
-/* Icon Specific Sizes */
-.footer .ri-facebook-fill,
-.footer .ri-twitter-fill,
-.footer .ri-instagram-fill,
-.footer .ri-linkedin-fill {
-  font-size: 2rem; /* Larger icons for a bolder look */
-}
-
-/* Add smooth background change on hover */
-.footer .social-media-icons a:hover {
-  background-color: rgba(255, 255, 255, 0.1); /* Subtle background on hover */
-  border-radius: 50%; /* Rounded effect for each icon */
+/* Footer Bottom Section */
+.footer-bottom {
+  border-top: 1px solid var(--tertiary-color);
+  padding: 10px 0;
+  font-size: 16px;
+  color: var(--background-color);
+  text-align: center;
 }

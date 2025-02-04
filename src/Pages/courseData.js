@@ -1,105 +1,123 @@
-// courseData.js
-
 const courses = [
-    {
+  {
       id: 1,
       title: 'React for Beginners',
       description: 'Learn React from scratch with hands-on examples.',
-      detailedDescription: `This course is designed for beginners who want to master React. We’ll start with the fundamentals like JSX, components, state, and props. By the end of this course, you'll be able to build simple React applications. The course will also cover React Router for navigation and state management using React Context. 
-      Fees: $199. Start Date: 1st March 2025. Duration: 4 weeks. 
-      Requirements: Basic knowledge of HTML, CSS, and JavaScript.`,
+      detailedDescription: `This course is designed for beginners who want to master React. We’ll start with the fundamentals like JSX, components, state, and props. By the end of this course, you'll be able to build simple React applications. The course will also cover React Router for navigation and state management using React Context.`,
+      requirements: 'Basic knowledge of HTML, CSS, and JavaScript.',
+      fees: '$199',
+      startDate: '1st March 2025',
+      duration: '4 weeks',
       instructor: 'John Doe',
-      image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWyoAP6-adn7bAxTWigCpTv-5cW6XMxdUZjg&s',
-    },
-    {
+      image: 'https://www.simplilearn.com/ice9/free_resources_article_thumb/React_Native_Tutorial.jpg',
+  },
+  {
       id: 2,
       title: 'Advanced Python Programming',
       description: 'Master Python programming with real-world projects.',
-      detailedDescription: `Take your Python skills to the next level with this advanced course. Learn about Python's powerful features like decorators, generators, and context managers. The course will dive deep into building real-world applications including web scrapers, data analysis with Pandas, and more. 
-      Fees: $249. Start Date: 15th April 2025. Duration: 6 weeks. 
-      Requirements: Intermediate Python knowledge is recommended.`,
+      detailedDescription: `Take your Python skills to the next level with this advanced course. Learn about Python's powerful features like decorators, generators, and context managers. The course will dive deep into building real-world applications including web scrapers, data analysis with Pandas, and more.`,
+      requirements: 'Intermediate Python knowledge is recommended.',
+      fees: '$249',
+      startDate: '15th April 2025',
+      duration: '6 weeks',
       instructor: 'Jane Smith',
-      image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9qGOw3UqnJ79dkaFlvFENKnO5B9HYpSuiTw&s',
-    },
-    {
+      image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2jFmlcR1mly2Z6dNr9s-wpEM0whKPTuRl6g&s',
+  },
+  {
       id: 3,
       title: 'UI/UX Design Fundamentals',
       description: 'Understand the basics of design and user experience.',
-      detailedDescription: `This course introduces the principles of UI/UX design. You'll learn how to create intuitive and attractive interfaces. Topics include wireframing, prototyping, and user testing. You'll also gain experience in tools like Figma and Adobe XD. 
-      Fees: $150. Start Date: 10th February 2025. Duration: 3 weeks. 
-      Requirements: No prior design knowledge is required, but basic computer skills are helpful.`,
+      detailedDescription: `This course introduces the principles of UI/UX design. You'll learn how to create intuitive and attractive interfaces. Topics include wireframing, prototyping, and user testing. You'll also gain experience in tools like Figma and Adobe XD.`,
+      requirements: 'No prior design knowledge is required, but basic computer skills are helpful.',
+      fees: '$150',
+      startDate: '10th February 2025',
+      duration: '3 weeks',
       instructor: 'Emily Clark',
-      image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9qGOw3UqnJ79dkaFlvFENKnO5B9HYpSuiTw&s',
-    },
-    {
+      image: 'https://www.aim.com.au/sites/default/files/00960_AIM_Screens_UXDesignFundamentals_640x360.jpg',
+  },
+  {
       id: 4,
       title: 'Data Science with Python',
       description: 'Analyze and visualize data using Python.',
-      detailedDescription: `In this course, you'll learn how to analyze and visualize data using Python libraries such as Pandas, NumPy, Matplotlib, and Seaborn. You'll work on real-world data analysis projects, from data cleaning to creating interactive dashboards.
-      Fees: $299. Start Date: 1st May 2025. Duration: 8 weeks. 
-      Requirements: Basic knowledge of Python programming is required.`,
+      detailedDescription: `In this course, you'll learn how to analyze and visualize data using Python libraries such as Pandas, NumPy, Matplotlib, and Seaborn. You'll work on real-world data analysis projects, from data cleaning to creating interactive dashboards.`,
+      requirements: 'Basic knowledge of Python programming is required.',
+      fees: '$299',
+      startDate: '1st May 2025',
+      duration: '8 weeks',
       instructor: 'Samuel Green',
-      image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9qGOw3UqnJ79dkaFlvFENKnO5B9HYpSuiTw&s',
-    },
-    {
+      image: 'https://dtmvamahs40ux.cloudfront.net/gl-academy/course/course-41-data%20science%20with%20Python.jpg',
+  },
+  {
       id: 5,
       title: 'Machine Learning with Python',
       description: 'Learn how to implement machine learning algorithms using Python.',
-      detailedDescription: `This course will guide you through the basics of machine learning. You will cover both supervised and unsupervised learning techniques, including linear regression, decision trees, and clustering. By the end, you'll have the skills to implement machine learning models from scratch.
-      Fees: $349. Start Date: 5th June 2025. Duration: 10 weeks. 
-      Requirements: Intermediate Python skills are required, along with basic math knowledge.`,
+      detailedDescription: `This course will guide you through the basics of machine learning. You will cover both supervised and unsupervised learning techniques, including linear regression, decision trees, and clustering. By the end, you'll have the skills to implement machine learning models from scratch.`,
+      requirements: 'Intermediate Python skills are required, along with basic math knowledge',
+      fees: '$349',
+      startDate: '5th June 2025',
+      duration: '10 weeks',
       instructor: 'Robert Williams',
-      image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9qGOw3UqnJ79dkaFlvFENKnO5B9HYpSuiTw&s',
-    },
-    {
+      image: 'https://media.licdn.com/dms/image/v2/D4E12AQHbXyUqtiN8zg/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1713707414962?e=2147483647&v=beta&t=cN36zZ_g1G9tUUrfYKu802DcMk8UUmZ2ifXMK0uFuSs',
+  },
+  {
       id: 6,
       title: 'Web Development Bootcamp',
       description: 'Build full-stack web applications from scratch.',
-      detailedDescription: `This bootcamp covers everything you need to know to build a modern, full-stack web application. From HTML, CSS, and JavaScript to server-side programming and database management, you'll get hands-on experience in every aspect of web development.
-      Fees: $499. Start Date: 1st July 2025. Duration: 12 weeks. 
-      Requirements: No prior programming knowledge required.`,
+      detailedDescription: `This bootcamp covers everything you need to know to build a modern, full-stack web application. From HTML, CSS, and JavaScript to server-side programming and database management, you'll get hands-on experience in every aspect of web development.`,
+      requirements: 'No prior programming knowledge required.',
+      fees: '$499',
+      startDate: '1st July 2025',
+      duration: '12 weeks',
       instructor: 'Alex Johnson',
-      image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9qGOw3UqnJ79dkaFlvFENKnO5B9HYpSuiTw&s',
-    },
-    {
+      image: 'https://img-c.udemycdn.com/course/750x422/625204_436a_3.jpg',
+  },
+  {
       id: 7,
       title: 'Digital Marketing Strategy',
       description: 'Learn digital marketing techniques to grow your business.',
-      detailedDescription: `This course will teach you how to develop and implement a digital marketing strategy. Topics include SEO, social media marketing, content marketing, email marketing, and Google Ads. You'll also learn how to analyze and optimize your marketing campaigns.
-      Fees: $199. Start Date: 20th August 2025. Duration: 6 weeks. 
-      Requirements: No prior marketing knowledge is necessary.`,
+      detailedDescription: `This course will teach you how to develop and implement a digital marketing strategy. Topics include SEO, social media marketing, content marketing, email marketing, and Google Ads. You'll also learn how to analyze and optimize your marketing campaigns.`,
+      requirements: 'No prior marketing knowledge is necessary.',
+      fees: '$199',
+      startDate: '20th August 2025',
+      duration: '6 weeks',
       instructor: 'Sarah Mitchell',
-      image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9qGOw3UqnJ79dkaFlvFENKnO5B9HYpSuiTw&s',
-    },
-    {
+      image: 'https://cdn.prod.website-files.com/634e7aa49f5b025e1fd9e87b/652039f7df88a2e80eb1906c_Business_Solution_Marketing_Digital_Planning.jpeg',
+  },
+  {
       id: 8,
       title: 'Cloud Computing Fundamentals',
       description: 'Understand cloud computing and how to deploy applications on cloud platforms.',
-      detailedDescription: `This course will give you an introduction to cloud computing, covering the basics of cloud infrastructure, cloud storage, and cloud services. You'll learn how to deploy applications on platforms like AWS and Azure.
-      Fees: $249. Start Date: 25th September 2025. Duration: 4 weeks. 
-      Requirements: Basic understanding of programming is recommended.`,
+      detailedDescription: `This course will give you an introduction to cloud computing, covering the basics of cloud infrastructure, cloud storage, and cloud services. You'll learn how to deploy applications on platforms like AWS and Azure.`,
+      requirements: 'Basic understanding of programming is recommended.',
+      fees: '$249',
+      startDate: '25th September 2025',
+      duration: '4 weeks',
       instructor: 'William Brown',
-      image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9qGOw3UqnJ79dkaFlvFENKnO5B9HYpSuiTw&s',
-    },
-    {
+      image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEreTFBwCVVerNs-bqQAoGPTrhufDlwqvGuw&s',
+  },
+{
       id: 9,
       title: 'Cybersecurity Essentials',
       description: 'Learn how to protect data and networks from cyber threats.',
-      detailedDescription: `This course covers the fundamentals of cybersecurity, including how to secure networks, prevent hacking attempts, and protect sensitive data. You'll learn about encryption, firewalls, and ethical hacking techniques.
-      Fees: $199. Start Date: 1st October 2025. Duration: 5 weeks. 
-      Requirements: Basic computer literacy required.`,
+      detailedDescription: `This course covers the fundamentals of cybersecurity, including how to secure networks, prevent hacking attempts, and protect sensitive data. You'll learn about encryption, firewalls, and ethical hacking techniques.`,
+      requirements: 'Basic computer literacy required.',
+      fees:'$199',
+      startDate:'1st October 2025', 
+      duration: '5 weeks' ,
       instructor: 'David Lee',
-      image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9qGOw3UqnJ79dkaFlvFENKnO5B9HYpSuiTw&s',
+      image: 'https://www.netacad.com/p/ff9e491c-49be-4734-803e-a79e6e83dab1/21e06a80-3a03-48b7-9be2-148e3188e602/image.png?ut=1682208119833',
     },
     {
       id: 10,
       title: 'Blockchain Technology and Cryptocurrencies',
       description: 'Understand how blockchain works and its applications in cryptocurrencies.',
-      detailedDescription: `This course introduces the concepts of blockchain technology and its use in cryptocurrencies. Learn how Bitcoin and Ethereum work, and explore decentralized applications (DApps), smart contracts, and blockchain development.
-      Fees: $299. Start Date: 15th November 2025. Duration: 7 weeks. 
-      Requirements: Basic understanding of programming is recommended.`,
+      detailedDescription: `This course introduces the concepts of blockchain technology and its use in cryptocurrencies. Learn how Bitcoin and Ethereum work, and explore decentralized applications (DApps), smart contracts, and blockchain development.`,
+      requirements: 'Basic understanding of programming is recommended.',
+      fees:'$299',
+      startDate:'15th November 2025',
+      duration:'7 weeks',
       instructor: 'Olivia Evans',
-      image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9qGOw3UqnJ79dkaFlvFENKnO5B9HYpSuiTw&s',
+      image: 'https://cdn.media.amplience.net/i/epammarketplace/blockchain-uses-cryptocurrency?maxW=1200&qlt=80&fmt=jpg&bg=rgb(255,255,255)&v=809579536732',
     },
   ];
   

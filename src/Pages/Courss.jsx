@@ -16,8 +16,11 @@ export default function Courss() {
               <h2 className="course-title">{course.title}</h2>
               <p className="course-description">{course.description}</p>
               <p className="course-instructor">Instructor: {course.instructor}</p>
-              <Link to={`/course/${course.id}`}>
-              <button className="enroll-button">Enroll Now</button>
+              <Link to={`/course/${course.id}`}   onClick={(e) => {
+  e.preventDefault(); // Prevent the default link behavior
+  window.open(`/course/${course.id}`, '_blank'); // Open in a new tab/window
+}}>
+              <button className="enroll-btn">Enroll Now</button>
               </Link>
             </div>
           </div>
