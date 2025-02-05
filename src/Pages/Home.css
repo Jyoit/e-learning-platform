@@ -1,10 +1,24 @@
-/* Home.css */
+/* Define CSS Variables */
+:root {
+  --primary-color: #007bff;
+  --secondary-color: #00c6ff;
+  --accent-color: #ff9900;
+  --background-light: #f4f4f4;
+  --background-white: #ffffff;
+  --text-dark: #333;
+  --text-light: #777;
+  --button-hover: #2980b9;
+  --gradient-primary: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+}
+
+/* General Styles */
 .home {
   font-family: 'Roboto', sans-serif;
 }
 
+/* Hero Banner */
 .hero-banner {
-  background: linear-gradient(to right, #007bff, #00c6ff);
+  background: var(--gradient-primary);
   color: white;
   text-align: center;
   padding: 50px 20px;
@@ -15,7 +29,7 @@
 }
 
 .hero-banner .cta-btn {
-  background-color: #ff9900;
+  background-color: var(--accent-color);
   padding: 10px 20px;
   border: none;
   color: white;
@@ -23,25 +37,18 @@
   font-size: 16px;
 }
 
-
-
 /* Popular Courses Section */
 .popular-courses {
   padding: 40px 20px;
-  background-color: #f4f4f4;
-  display: flex;
-  flex-direction: column;
-  align-items: center; 
-  justify-content: center;
+  background-color: var(--background-light);
   text-align: center;
 }
 
 .popular-courses h2 {
-  text-align: center;
   font-size: 36px;
   font-weight: bold;
   margin-bottom: 30px;
-  color: #333;
+  color: var(--text-dark);
 }
 
 /* Grid Layout for Course Cards */
@@ -49,21 +56,18 @@
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
   gap: 50px;
-  /* justify-items: center; */
-  justify-content: center; 
+  justify-content: center;
   justify-items: center;
-  
 }
 
 /* Course Card Styles */
 .course-card {
-  background-color: #ffffff;
+  background-color: var(--background-white);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
   overflow: hidden;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   width: 100%;
-  
 }
 
 .course-card:hover {
@@ -76,7 +80,7 @@
   width: 100%;
   height: 200px;
   object-fit: cover;
-  border-bottom: 2px solid #f0f0f0;
+  border-bottom: 2px solid var(--background-light);
 }
 
 /* Course Details */
@@ -87,19 +91,17 @@
 .course-info h3 {
   font-size: 22px;
   font-weight: 600;
-  margin-bottom: 10px;
-  color: #333;
+  color: var(--text-dark);
 }
 
 .course-info p {
   font-size: 16px;
-  color: #777;
-  margin-bottom: 15px;
+  color: var(--text-light);
 }
 
 /* Enroll Button */
 .enroll-btn {
-  background-color: #3498db;
+  background: var(--gradient-primary);
   color: white;
   padding: 12px 20px;
   border: none;
@@ -110,113 +112,50 @@
 }
 
 .enroll-btn:hover {
-  background-color: #2980b9;
+  background-color: var(--button-hover);
 }
-
-/* Responsive Design */
-@media (max-width: 768px) {
-  .popular-courses {
-    padding: 20px 10px;
-  }
-
-  .popular-courses h2 {
-    font-size: 28px;
-  }
-}
-
-@media (max-width: 480px) {
-  .popular-courses h2 {
-    font-size: 24px;
-  }
-}
-
-
- 
-/* upcoming events */
-/*
-
-.upcoming-events {
-  margin-top: 40px;
-  padding: 0 20px;
-}
-
-
-.upcoming-events h2 {
-  text-align: center;
-}
-
-
-.event-grid {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-}
-
-
-.event-card {
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  padding: 20px;
-  width: 30%;
-  margin: 20px 0;
-  text-align: center;
-}
-
-
-.event-card img {
-  width: 100%;
-  border-radius: 8px;
-}
-
-
-.event-card h3 {
-  font-size: 18px;
-}
-
-
-.register-btn {
-  background-color: #007bff;
-  color: white;
-  padding: 10px 20px;
-  border: none;
-  cursor: pointer;
-  margin-top: 10px;
-} */
-
 
 /* Upcoming Events Section */
 .upcoming-events {
   padding: 40px 20px;
-  background-color: #f4f4f4;
+  background-color: var(--background-light);
 }
 
 .upcoming-events h2 {
-  text-align: center;
   font-size: 36px;
+  text-align: center;
   font-weight: bold;
+  color: var(--text-dark);
   margin-bottom: 30px;
-  color: #333;
 }
 
-/* Flexbox Layout for Event Cards */
-.event-grid {
-  display: flex;
-  justify-content: center; /* Aligns cards in the center horizontally */
-  gap: 20px; /* Adds padding between the cards */
-  flex-wrap: wrap; /* Ensures cards wrap to the next row on smaller screens */
-}
 
 /* Event Card Styles */
 .event-card {
-  background-color: #ffffff;
+  background-color: var(--background-white);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
   overflow: hidden;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  width: 580px; /* Fixed width for consistent layout */
+  width: 580px;
   padding: 30px 20px;
   text-align: center;
 }
+
+
+.event-grid {
+  display: flex;
+  justify-content: center; /* Centers the event cards */
+  align-items: center;
+  gap: 40px; /* Space between the two cards */
+  flex-wrap: nowrap; /* Prevents wrapping to the next row */
+}
+
+/*------------------------------------------------*/
+/* .event-card {
+  width: 500px; 
+  max-width: 100%;
+} */
+
 
 .event-card:hover {
   transform: translateY(-10px);
@@ -228,30 +167,12 @@
   width: 100%;
   height: 200px;
   object-fit: cover;
-  border-bottom: 2px solid #f0f0f0;
-}
-
-/* Event Details */
-.event-info {
-  padding: 20px;
-}
-
-.event-info h3 {
-  font-size: 22px;
-  font-weight: 600;
-  margin-bottom: 10px;
-  color: #333;
-}
-
-.event-info p {
-  font-size: 16px;
-  color: #777;
-  margin-bottom: 15px;
+  border-bottom: 2px solid var(--background-light);
 }
 
 /* Register Button */
 .register-btn {
-  background-color: #3498db;
+  background: var(--gradient-primary);
   color: white;
   padding: 12px 20px;
   border: none;
@@ -259,59 +180,32 @@
   font-size: 16px;
   cursor: pointer;
   transition: background-color 0.3s ease;
+
+  
 }
 
 .register-btn:hover {
-  background-color: #2980b9;
+  background-color: var(--button-hover);
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
-  .upcoming-events {
+  .popular-courses, .upcoming-events {
     padding: 20px 10px;
   }
 
-  .upcoming-events h2 {
+  .popular-courses h2, .upcoming-events h2 {
     font-size: 28px;
-  }
-
-  .event-grid {
-    gap: 15px; /* Adjust gap for smaller screens */
   }
 }
 
 @media (max-width: 480px) {
-  .upcoming-events h2 {
+  .popular-courses h2, .upcoming-events h2 {
     font-size: 24px;
   }
-
-  .event-grid {
-    flex-direction: column; /* Stacks the cards vertically on small screens */
-    align-items: center; /* Center-aligns the cards */
-  }
 }
 
 
-
-
-
-.faq {
-  margin-top: 40px;
-  padding: 0 20px;
-}
-
-.faq h2 {
-  text-align: center;
-}
-
-.faq-item {
-  margin-bottom: 20px;
-}
-
-.faq-item h4 {
-  font-size: 18px;
-  font-weight: bold;
-}
 
 .cta-final {
   text-align: center;
@@ -319,10 +213,36 @@
 }
 
 .cta-final .cta-btn {
-  background-color: #ff9900;
-  padding: 10px 20px;
-  border: none;
+  background: var(--gradient-primary);
   color: white;
-  cursor: pointer;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
   font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+} 
+
+.cta-final .cta-btn:hover {
+  background-color: var(--button-hover);
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -33,12 +33,13 @@ export default function Navbar() {
           </li>
         </ul>
         <form onSubmit={handleSearch} className="relative">
+          
           <input
             type="text"
             value={searchInput}
             onChange={(e) => setSearchInput(e.target.value)}
             className="px-4 py-2 rounded-lg bg-gray-700 text-white focus:outline-none"
-            placeholder="Search..."
+            placeholder="Search"
           />
           <button type="submit" className="absolute right-2 top-2 text-gray-300 hover:text-white">
             🔍
