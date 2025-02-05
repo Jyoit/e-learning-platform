@@ -19,7 +19,7 @@ export default function Navbar() {
     <nav className="bg-gray-800 text-white shadow-lg">
       <div className="container mx-auto flex justify-between items-center py-4 px-6">
         <Link to="/" className="text-xl font-bold hover:text-gray-300">
-          MyApp
+        E-LearnFlow
         </Link>
         <ul className="flex space-x-6">
           <li>

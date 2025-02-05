@@ -119,6 +119,30 @@ const courses = [
       instructor: 'Olivia Evans',
       image: 'https://cdn.media.amplience.net/i/epammarketplace/blockchain-uses-cryptocurrency?maxW=1200&qlt=80&fmt=jpg&bg=rgb(255,255,255)&v=809579536732',
     },
+    {
+        id: 11,
+        title: 'Digital Marketing Strategy',
+        description: 'Learn digital marketing techniques to grow your business.',
+        detailedDescription: `This course will teach you how to develop and implement a digital marketing strategy. Topics include SEO, social media marketing, content marketing, email marketing, and Google Ads. You'll also learn how to analyze and optimize your marketing campaigns.`,
+        requirements: 'No prior marketing knowledge is necessary.',
+        fees: '$199',
+        startDate: '20th August 2025',
+        duration: '6 weeks',
+        instructor: 'Sarah Mitchell',
+        image: 'https://cdn.prod.website-files.com/634e7aa49f5b025e1fd9e87b/652039f7df88a2e80eb1906c_Business_Solution_Marketing_Digital_Planning.jpeg',
+    },
+    {
+        id: 12,
+        title: 'Machine Learning with Python',
+        description: 'Learn how to implement machine learning algorithms using Python.',
+        detailedDescription: `This course will guide you through the basics of machine learning. You will cover both supervised and unsupervised learning techniques, including linear regression, decision trees, and clustering. By the end, you'll have the skills to implement machine learning models from scratch.`,
+        requirements: 'Intermediate Python skills are required, along with basic math knowledge',
+        fees: '$349',
+        startDate: '5th June 2025',
+        duration: '10 weeks',
+        instructor: 'Robert Williams',
+        image: 'https://media.licdn.com/dms/image/v2/D4E12AQHbXyUqtiN8zg/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1713707414962?e=2147483647&v=beta&t=cN36zZ_g1G9tUUrfYKu802DcMk8UUmZ2ifXMK0uFuSs',
+    },
   ];
   
   export default courses;

@@ -1,101 +1,129 @@
 /* General Styles */
 .courses-container {
-    padding: 40px 20px;
-    background-color: #f4f4f4;
-  }
-  
-  .courses-title {
-    text-align: center;
-    font-size: 36px;
-    font-weight: bold;
-    margin-bottom: 30px;
-    color: #333;
-  }
-  
-  /* Grid Layout for Course Cards */
+  padding: 40px 20px;
+  background-color: #f4f4f4;
+  text-align: center; /* Centering content */
+}
+
+/* Title Styling */
+.courses-title {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+/* Grid Layout for Course Cards */
+.course-cards {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(280px, 1fr));
+  row-gap: 25px;
+  column-gap: 25px;
+  justify-items: center;
+}
+
+/* Individual Course Card */
+.course-card {
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 100%;
+  max-width: 500px; /* Prevents overly large cards */
+}
+
+.course-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Course Image */
+.course-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-bottom: 2px solid #f0f0f0;
+}
+
+/* Course Details */
+.course-details {
+  padding: 20px;
+}
+
+.course-title {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.course-description {
+  font-size: 16px;
+  color: #777;
+  margin-bottom: 15px;
+}
+
+.course-instructor {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+/* Enroll Button */
+.enroll-btn {
+  background-color: #3498db;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.enroll-btn:hover {
+  background-color: #2980b9;
+}
+
+/* RESPONSIVE DESIGN */
+
+/* Medium Screens (Tablets & Small Laptops) */
+@media (max-width: 1024px) {
   .course-cards {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-    gap: 20px;
-    justify-items: center;
+      grid-template-columns: repeat(3, minmax(250px, 1fr));
   }
-  
-  .course-card {
-    background-color: #ffffff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-    overflow: hidden;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    width: 100%;
-  }
-  
-  .course-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
-  }
-  
-  /* Course Image */
-  .course-image {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    border-bottom: 2px solid #f0f0f0;
-  }
-  
-  /* Course Details */
-  .course-details {
-    padding: 20px;
-  }
-  
-  .course-title {
-    font-size: 22px;
-    font-weight: 600;
-    margin-bottom: 10px;
-    color: #333;
-  }
-  
-  .course-description {
-    font-size: 16px;
-    color: #777;
-    margin-bottom: 15px;
-  }
-  
-  .course-instructor {
-    font-size: 14px;
-    color: #555;
-    margin-bottom: 20px;
-  }
-  
-  /* Enroll Button */
-  .enroll-btn {
-    background-color: #3498db;
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 5px;
-    font-size: 16px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  .enroll-btn:hover {
-    background-color: #2980b9;
-  }
-  
-  /* Responsive Design */
-  @media (max-width: 768px) {
-    .courses-container {
+}
+
+/* Small Screens (Tablets & Large Phones) */
+@media (max-width: 768px) {
+  .courses-container {
       padding: 20px 10px;
-    }
-  
-    .courses-title {
+  }
+
+  .courses-title {
       font-size: 28px;
-    }
   }
-  
-  @media (max-width: 480px) {
-    .courses-title {
+
+  .course-cards {
+      grid-template-columns: repeat(2, minmax(250px, 1fr));
+      gap: 15px;
+  }
+}
+
+/* Extra Small Screens (Mobile Phones) */
+@media (max-width: 525px) {
+  .courses-title {
       font-size: 24px;
-    }
   }
-  
+
+  .course-cards {
+      grid-template-columns: repeat(1, minmax(250px, 1fr)); /* Single column layout */
+      gap: 10px;
+  }
+
+  .course-card {
+      width: 90%; /* Reduce width for better spacing */
+      max-width: 350px;
+  }
+}

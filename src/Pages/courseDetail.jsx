@@ -41,7 +41,7 @@ const CourseDetail = () => {
         <p>Requirements:{course.requirements}</p>
       </div>
       <Link to={`/course/${course.id}`}>
-              <button className="enroll-button course-detail">Enroll Now</button>
+              <button className="course-detail-enroll-button">Enroll Now</button>
               </Link>
       <div className="course-detail-modules">
         <h2>Modules</h2>
